@@ -122,7 +122,6 @@ and treats the rest of the line as regular args.
 
 ###ENJOY, IMPROVE, 
        Chris
- 
 
 
-
+[![Cropping Arcadia](http://img.youtube.com/vi/SrvErvylfmg/0.jpg)](https://www.youtube.com/watch?v=SrvErvylfmg)
