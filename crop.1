@@ -1,0 +1,55 @@
+.\" crop man page
+.TH CROP "1" "November 2016" "crop version:    1.3  date:     01 Nov 2016" "User Commands"
+.SH NAME
+	crop
+.SH DESCRIPTION
+crop removes a matching string from a list of filenames.
+.SH SYNOPSIS
+	crop <string> <filename1> <filename2> ...
+.SH OPTIONS
+.HP
+\fB\-a\fR remove all matches from filename, (not just first match)
+.HP
+\fB\-f\fR force rename (non\-interactive)
+.HP
+\fB\-h\fR help
+.HP
+\fB\-q\fR quiet
+.HP
+\fB\-v\fR version
+.IP
+.SH NOTE
+.RS
+(*) processes all files in the current directory.
+.RE
+
+.SH EXAMPLES
+.PP
+.RS
+to remove 'dog' from dougdog.txt: 
+.RS
+.TP
+crop dog dougdog.txt 
+.TP
+dougdog.txt ==> doug.txt
+.RE
+.PP
+to batch crop a string from a list of files:
+.RS
+.br
+hit <tab> to auto complete prefix, 
+.br
+place extra space after the last char, 
+.br
+use asterix (*) to autocomplete file list.
+.br
+(see README for more.)
+.TP
+crop -f Yes\ \-\ Going\ For\ The\ One\ \-\ 1973\ -\  * 
+.RE	 
+
+.SH AUTHOR
+	Chris L Reid <spikeysnack@gmail.com>
+
+.SH SEE ALSO
+	rename(1)  replace(1)

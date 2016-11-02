@@ -1,0 +1,111 @@
+Content-type: text/html; charset=UTF-8
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><HEAD><TITLE>Man page of CROP</TITLE>
+</HEAD><BODY>
+<H1>CROP</H1>
+Section: User Commands (1)<BR>Updated: November 2016<BR><A HREF="#index">Index</A>
+<A HREF="/cgi-bin/man/man2html">Return to Main Contents</A><HR>
+
+<A NAME="lbAB">&nbsp;</A>
+<H2>NAME</H2>
+
+<TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TT>crop<BR>
+<A NAME="lbAC">&nbsp;</A>
+<H2>DESCRIPTION</H2>
+
+crop removes a matching string from a list of filenames.
+<A NAME="lbAD">&nbsp;</A>
+<H2>SYNOPSIS</H2>
+
+<TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TT>crop &lt;string&gt; &lt;filename1&gt; &lt;filename2&gt; ...<BR>
+<A NAME="lbAE">&nbsp;</A>
+<H2>OPTIONS</H2>
+
+<DL COMPACT>
+<DT>
+<B>-a</B> remove all matches from filename, (not just first match)
+<DT>
+<B>-f</B> force rename (non-interactive)
+<DT>
+<B>-h</B> help
+<DT>
+<B>-q</B> quiet
+<DT>
+<B>-v</B> version
+<DT><DD>
+</DL>
+<A NAME="lbAF">&nbsp;</A>
+<H2>NOTE</H2>
+
+<DL COMPACT><DT><DD>
+(*) processes all files in the current directory.
+</DL>
+
+<P>
+<A NAME="lbAG">&nbsp;</A>
+<H2>EXAMPLES</H2>
+
+<P>
+
+<DL COMPACT><DT><DD>
+<DD>to remove 'dog' from dougdog.txt: 
+<DL COMPACT><DT><DD>
+<DL COMPACT>
+<DT>crop dog dougdog.txt <DD>
+<DT>dougdog.txt ==&gt; doug.txt<DD>
+</DL>
+</DL>
+
+<P>
+
+to batch crop a string from a list of files:
+<DL COMPACT><DT><DD>
+<BR>
+
+hit &lt;tab&gt; to auto complete prefix, 
+<BR>
+
+place extra space after the last char, 
+<BR>
+
+use asterix (*) to autocomplete file list.
+<BR>
+
+(see README for more.)
+<DL COMPACT>
+<DT>crop -f Yes&nbsp;-&nbsp;Going&nbsp;For&nbsp;The&nbsp;One&nbsp;-&nbsp;1973&nbsp;-&nbsp; * <DD>
+</DL>
+</DL>
+
+<P>
+</DL>
+<A NAME="lbAH">&nbsp;</A>
+<H2>AUTHOR</H2>
+
+<TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TT>Chris L Reid &lt;<A HREF="mailto:spikeysnack@gmail.com">spikeysnack@gmail.com</A>&gt;<BR>
+<P>
+<A NAME="lbAI">&nbsp;</A>
+<H2>SEE ALSO</H2>
+
+<TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TT><A HREF="/cgi-bin/man/man2html?1+rename">rename</A>(1)  <A HREF="/cgi-bin/man/man2html?1+replace">replace</A>(1)<BR>
+<P>
+
+<HR>
+<A NAME="index">&nbsp;</A><H2>Index</H2>
+<DL>
+<DT><A HREF="#lbAB">NAME</A><DD>
+<DT><A HREF="#lbAC">DESCRIPTION</A><DD>
+<DT><A HREF="#lbAD">SYNOPSIS</A><DD>
+<DT><A HREF="#lbAE">OPTIONS</A><DD>
+<DT><A HREF="#lbAF">NOTE</A><DD>
+<DT><A HREF="#lbAG">EXAMPLES</A><DD>
+<DT><A HREF="#lbAH">AUTHOR</A><DD>
+<DT><A HREF="#lbAI">SEE ALSO</A><DD>
+</DL>
+<HR>
+This document was created by
+<A HREF="/cgi-bin/man/man2html">man2html</A>,
+using the manual pages.<BR>
+Time: 13:12:35 GMT, November 01, 2016
+</BODY>
+</HTML>

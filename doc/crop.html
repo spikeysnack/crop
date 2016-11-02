@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html><head>
+<title>README for crop</title>
+<meta name="generator" content="Bluefish 2.2.5" >
+<meta name="description" content="crop removes a matching string from a list of filenames." />
+<meta name="keywords" content="cropping, batch renaming, text manipulation" />
+<link rel="stylesheet" type="text/css" href="light.css" title="alternate1" />
+</head>
+<body>
+
+<div ID="content">
+<img src="crop.png" alt="CROP" style={font-family: Georgia; color: #697c52; font-style: italic; font-size: 30px;}>
+<verdana>
+<h3>
+<div align="middle">version:    1.6         date:   01 Nov 2016 </div>
+<h1>USAGE</h1>
+<blockquote>
+<code>
+<font size="4" color="blue">
+crop &lt;string&gt; &lt;filename1&gt; &lt;filename2&gt; ... 
+</font>
+</code>
+</blockquote>
+</h3>
+
+<h1>OPTIONS</h1>
+<blockquote>
+<code>
+<font size="4" color="blue">
+<pre>
+  -a remove all matches from filename, (not just first match) 
+  -f force rename (non-interactive)  
+  -h help 
+  -q quiet 
+  -v version 
+  note: (*) processes all files in current dir 
+</pre>
+</font>
+</code>
+
+</blockquote>
+
+
+<h1>EXAMPLES</h1>
+<blockquote>
+ to remove 'doug' from dougdog.txt: 
+<p>
+<code>
+<font size="4" color="blue">
+<pre>
+  crop doug dougdog.txt
+<p> 
+  dougdog.txt ==> dog.txt  
+</pre>
+</font>
+</code>
+</blockquote>
+
+<h1>EXPLANATION</h1><p>
+<pre>
+I like to arrange my digital music collection thusly:
+   FORMAT
+	 ARTIST
+		ALBUM
+		      FILES</p><p>
+
+So I have directories like so:
+   FLAC/
+	 Yes/
+ 	      Going For The One/
+				  Going For the One.flac 
+				  Going For the One.cue 
+				  Going For the One.log
+				  Going For the One.txt
+				  Front.jpg
+				  Back.jpg
+				  Inlay.jpg
+				  Disc.jpg
+  </p>
+  <p>
+But more often than not the files come in a Roshell archive (rar) like so:
+Yes - Going For The One - 1973 - Going For the One.flac 
+Yes - Going For The One - 1973 - Going For the One.cue 
+Yes - Going For The One - 1973 - Going For the One.log
+Yes - Going For The One - 1973 - Going For the One.txt
+Yes - Going For The One - 1973 - Front.jpg
+Yes - Going For The One - 1973 - Back.jpg
+Yes - Going For The One - 1973 - Inlay.jpg
+Yes - Going For The One - 1973 - Disc.jpg
+</p>
+<p>
+or </p>
+<p>
+
+BIG_FREAKIN_ARCHIVE_OF_KORKOVSKI_IS_THE_MAN.COM!!!!_-_Going_For_the_One.flac
+BIG_FREAKIN_ARCHIVE_OF_KORKOVSKI_IS_THE_MAN.COM!!!!_-_Going_For_the_One.cue
+BIG_FREAKIN_ARCHIVE_OF_KORKOVSKI_IS_THE_MAN.COM!!!!_-_Going_For_the_One.jpg
+BIG_FREAKIN_ARCHIVE_OF_KORKOVSKI_IS_THE_MAN.COM!!!!_-_Going_For_the_One.txt
+...
+
+--> just all kinds of wrong.
+</pre>
+
+<h1>NOTES</h1>
+<pre>
+<blockquote>
+So Microsoft Windows 7 has a handy feature for renaming files 
+by hitting F2,editing, and then  hitting tab again 
+to rename the next file automatically,
+and sometime you have to do each file separately, 
+but if I do something so many times per week, 
+I want to automate it somewhat.
+</blockquote>
+<blockquote>
+crop allows you to cut out a substring 
+from the name of a group of files
+while ignoring files without the matching string.
+</blockquote>
+
+In the above case I would invoke it like this:
+
+<code>
+<font size="4" color="blue">
+<pre>
+crop -f Yes\ \-\ Going\ For\ The\ One\ \-\ 1973\ -\  * 
+</pre>
+</font>
+</code>
+<h5><i>(By hitting the &lt;tab&gt; key, bash autocompletes the prefix to the files.)
+(  The asterix autocompletes to all files in the current directory.    )</i></h5>
+
+
+and the string 
+<font color="green"><i>&quot;Yes - Going For The One - 1973 - &quot;</i></font>  
+would be removed from <u>all</u> filenames in the path.
+
+<blockquote>
+<h5>
+It is tricky with the dashes and spaces,
+but a double space before the * makes it work, 
+and bash auto-expands the backslashes with 
+a one or two character tap of the <tab> key. 
+If you get it wrong nothing much happens. 
+
+You must explicitly force auto-renaming because
+it takes some experience to gain confidence in the tool 
+that you aren't going to hurt your files, 
+but it becomes a real time-saver for bulk renaming files
+with unwanted common strings in them.
+
+If a mistake is made and you end up with a file that starts with
+some bad character like a space or a dash, remember that GNU <i>getops</i>
+stops parsing after a double dash (--) 
+and treats the rest of the line as regular args. 
+</h5>
+</blockquote>
+</pre>
+
+<h2>To see crop in action watch this:</h2>
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/SrvErvylfmg" frameborder="0" allowfullscreen></iframe>
+
+<h2>ENJOY,</h2>
+
+<p>
+Written by <a href="mailto:spikeysnack@gmail.com?Subject=crop">Chris L. Reid</a>
+</p>
+Visit me at:<br>
+<a href="https://www.facebook.com/ChrisLReid"> https://www.facebook.com/ChrisLReid </a>
+
+</div> 
+</body>
+</html>
