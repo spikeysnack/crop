@@ -1,10 +1,14 @@
+![alt text][logo]
+
+[logo]: https://github.com/spikeysnack/crop/blob/master/doc/crop.png "crop"
+
 ##crop removes a matching string from a list of filenames.
 
-##VERSION
-###crop version:	 1.6  date:	10 Nov 2016
+###VERSION
+crop version:	 1.6  date:	10 Nov 2016
 
-##INSTALLATION
-###	The binary crop is installed in /usr/loca/bin/crop
+###INSTALLATION
+	The binary crop is installed in /usr/loca/bin/crop
 	The man page goes in /usr/local/share/man/man1/crop.1
 	The documentation goes in /usr/local/doc/crop/
 
@@ -21,8 +25,8 @@
 		 you will be asked for oyour password)
 
 
-##USAGE
-###usage: crop <string> <filename1> <filename2> ...
+###USAGE
+usage: crop <string> <filename1> <filename2> ...
 options:
 	 -a remove all matches from filename, (not just first match) 
 	 -f force rename (non-interactive)  
@@ -33,14 +37,12 @@ options:
 
 	EXAMPLE:	 to remove 'doug' from dougdog.txt 
 	 crop doug dougdog.txt 
-	                   dougdog.txt  ==> dog.txt  
+	########   dougdog.txt  ==> dog.txt  
 
-![alt text][logo]
-
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
 
 ##EXPLANATION 
-###I like to arrange my digital music collection thusly:
+
+I like to arrange my digital music collection thusly:
    FORMAT
 	 ARTIST
 		ALBUM
@@ -118,7 +120,7 @@ some bad character like a space or a dash, remember that GNU getops
 stops parsing after a double dash (--) 
 and treats the rest of the line as regular args. 
 
-##ENJOY, IMPROVE, 
+###ENJOY, IMPROVE, 
        Chris
  
 
