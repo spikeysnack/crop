@@ -26,29 +26,34 @@ crop version:	 1.6  date:	10 Nov 2016
 
 
 ###USAGE
-usage: crop <string> <filename1> <filename2> ...
-options:
-	 -a remove all matches from filename, (not just first match) 
-	 -f force rename (non-interactive)  
-	 -h help 
-	 -q quiet 
-	 -v version 
+<pre>
+	usage: crop < string > < filename1 > < filename2 > ...
+
+	options:
+		 -a remove all matches from filename, (not just first match) 
+	 	-f force rename (non-interactive)  
+	 	-h help 
+	 	-q quiet 
+	 	-v version 
 	note: (*) processes all files in current dir
+</pre>
+
 
 	EXAMPLE:	 to remove 'doug' from dougdog.txt 
 	 crop doug dougdog.txt 
 	########   dougdog.txt  ==> dog.txt  
 
-
 ##EXPLANATION 
 
 I like to arrange my digital music collection thusly:
+<pre>
    FORMAT
 	 ARTIST
 		ALBUM
 		      FILES
-
+</pre>
 So I have directories like so:
+<pre>
    FLAC/
 	 Yes/
  	      Going For The One/
@@ -60,9 +65,10 @@ So I have directories like so:
 				  Back.jpg
 				  Inlay.jpg
 				  Disc.jpg
-  
+</pre>  
 
 But more often than not the files come in a Roshell archive (rar) like so:
+<pre>
 Yes - Going For The One - 1973 - Going For the One.flac 
 Yes - Going For The One - 1973 - Going For the One.cue 
 Yes - Going For The One - 1973 - Going For the One.log
@@ -71,15 +77,15 @@ Yes - Going For The One - 1973 - Front.jpg
 Yes - Going For The One - 1973 - Back.jpg
 Yes - Going For The One - 1973 - Inlay.jpg
 Yes - Going For The One - 1973 - Disc.jpg
-
+</pre>
 or 
-
+<pre>
 BIG_FREAKIN_ARCHIVE_OF_KORKOVSKI_IS_THE_MAN.COM!!!!_Going For the One.flac
 BIG_FREAKIN_ARCHIVE_OF_KORKOVSKI_IS_THE_MAN.COM!!!!_Going For the One.cue
 BIG_FREAKIN_ARCHIVE_OF_KORKOVSKI_IS_THE_MAN.COM!!!!_Going For the One.jpg
 BIG_FREAKIN_ARCHIVE_OF_KORKOVSKI_IS_THE_MAN.COM!!!!_Going For the One.txt
 ...
-
+</pre>
 --> just all kinds of wrong.
 
 
@@ -97,9 +103,9 @@ while ignoring files without the matching string.
 
 
 In the above case I would invoke it like this:
-
+```bash
    crop -f Yes\ \-\ Going\ For\ The\ One\ \-\ 1973\ -\  *  
-
+```
 and the string "Yes - Going For The One - 1973 - " 
 would be removed from all filenames in the dir.
 
