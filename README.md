@@ -2,12 +2,12 @@
 
 [logo]: https://github.com/spikeysnack/crop/blob/master/doc/crop.png "crop"
 
-##crop removes a matching string from a list of filenames.
+## crop removes a matching string from a list of filenames.
 
-###VERSION
+### VERSION
 crop version:	 1.6  date:	10 Nov 2016
 
-###INSTALLATION
+### INSTALLATION
 	The binary crop is installed in /usr/loca/bin/crop
 	The man page goes in /usr/local/share/man/man1/crop.1
 	The documentation goes in /usr/local/doc/crop/
@@ -25,7 +25,7 @@ crop version:	 1.6  date:	10 Nov 2016
 		 you will be asked for oyour password)
 
 
-###USAGE
+### USAGE
 <pre>
 	usage: crop < string > < filename1 > < filename2 > ...
 
@@ -43,7 +43,7 @@ crop version:	 1.6  date:	10 Nov 2016
 	 crop doug dougdog.txt 
 	########   dougdog.txt  ==> dog.txt  
 
-##EXPLANATION 
+### EXPLANATION 
 
 I like to arrange my digital music collection thusly:
 <pre>
@@ -126,8 +126,8 @@ some bad character like a space or a dash, remember that GNU getops
 stops parsing after a double dash (--) 
 and treats the rest of the line as regular args. 
 
-###ENJOY, IMPROVE, 
+### ENJOY, IMPROVE, 
        Chris
 
-
+Note-- I think Youtube has kaiboshed this. I objected and lost in arbitration. for now. 
 [![Cropping Arcadia](http://img.youtube.com/vi/SrvErvylfmg/0.jpg)](https://www.youtube.com/watch?v=SrvErvylfmg)
