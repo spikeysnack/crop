@@ -129,4 +129,4 @@ and treats the rest of the line as regular args.
 ### ENJOY, IMPROVE, 
        Chris
 
-[![Cropping Arcadia]](https://vimeo.com/231978052)
+[![Cropping Arcadia](https://s25.postimg.org/53t5baunj/mpv-shot0001.jpg)](https://vimeo.com/231978052)
