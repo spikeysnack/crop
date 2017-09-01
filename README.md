@@ -8,7 +8,7 @@
 crop version:	 1.6  date:	10 Nov 2016
 
 ### INSTALLATION
-	The binary crop is installed in /usr/loca/bin/crop
+	The binary crop is installed in /usr/local/bin/crop
 	The man page goes in /usr/local/share/man/man1/crop.1
 	The documentation goes in /usr/local/doc/crop/
 
@@ -41,7 +41,7 @@ crop version:	 1.6  date:	10 Nov 2016
 
 	EXAMPLE:	 to remove 'doug' from dougdog.txt 
 	 crop doug dougdog.txt 
-	########   dougdog.txt  ==> dog.txt  
+	 dougdog.txt  ==> dog.txt  
 
 ### EXPLANATION 
 
@@ -129,5 +129,4 @@ and treats the rest of the line as regular args.
 ### ENJOY, IMPROVE, 
        Chris
 
-Note-- I think Youtube has kaiboshed this. I objected and lost in arbitration. for now. 
-[![Cropping Arcadia](http://img.youtube.com/vi/SrvErvylfmg/0.jpg)](https://www.youtube.com/watch?v=SrvErvylfmg)
+[![Cropping Arcadia]](https://vimeo.com/231978052)
