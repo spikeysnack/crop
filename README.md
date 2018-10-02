@@ -5,7 +5,7 @@
 ##crop removes a matching string from a list of filenames.
 
 ###VERSION
-crop version:	 1.6  date:	10 Nov 2016
+crop version:	 1.6  date:	10 Nov 2017
 
 ###INSTALLATION
 	The binary crop is installed in /usr/loca/bin/crop

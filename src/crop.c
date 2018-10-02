@@ -3,14 +3,14 @@
 
 /* AUTHOR:  Chris Reid <spikeysnack@gmail.com> */
 /* LICENSE: Free for all purposes              */
-/* COPYRIGHT: 2016- Chris Reid                 */
+/* COPYRIGHT: 2017- Chris Reid                 */
 
 /* The main workhorse funtions are in crop.h and utils.h. */
 
 
 
 #define CROP_VERSION       "1.6"
-#define CROP_DATE          "01 Nov 2016"
+#define CROP_DATE          "01 Nov 2017"
 
 #include<locale.h>
 
@@ -41,7 +41,7 @@ int main ( int argc, char** argv, char** env)
   if (argc  < 2 )
     {
       usage(stderr);
-      exit(-1);
+      exit(0);
     }
 
   /* get the command options */

@@ -1,0 +1,16 @@
+@import url("base.css");
+
+h1 {
+	color: #6040c0;
+}
+body {
+	color: black;
+	background-color: SeaShell;
+	background-image: url('button.png');
+}
+
+#content {
+    background-color: SeaShell; 
+}
+
+

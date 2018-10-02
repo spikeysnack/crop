@@ -7,7 +7,7 @@
 
 /* AUTHOR:  Chris Reid <spikeysnack@gmail.com> */
 /* LICENSE: Free for all purposes              */
-/* COPYRIGHT: 2016- Chris Reid                 */
+/* COPYRIGHT: 2015- Chris Reid                 */
 
 
 #ifndef UTILS_H
@@ -211,30 +211,23 @@ bool rename_file ( const char* filename, const char* newname )
 /* OUPUT                               */
 /*      bool: true if Y or y           */
 
-#define BUFF_SZ 80
-
 bool get_response()
 {
-  char line[BUFF_SZ] = {0};
-  char p;
+
+  char p = '\0';
 
   fflush (stdin);
 
-  if (  scanf ("%s", line) == EOF )
-    return false;
+  if (  scanf ("%c", &p) == EOF ) return false;
 
 
-  if (line == (char*)NULL )
-    return false;
-  else     
-    {
-      p = line[0];
-      if ( (p == 'Y') || ( p == 'y') )
-	return true;
-      else 
-	return false;
-    }
+  if ( (p == 'Y') || ( p == 'y') ) return true;
+      
+  return false;
+
 }/* get_response */
+
+
 
 
 #endif

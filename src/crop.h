@@ -2,7 +2,7 @@
 
 /* AUTHOR:  Chris Reid <spikeysnack@gmail.com> */
 /* LICENSE: Free for all purposes              */
-/* COPYRIGHT: 2016- Chris Reid                 */
+/* COPYRIGHT: 2017- Chris Reid                 */
 
 
 #ifndef CROP_H
@@ -15,6 +15,9 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
+
+extern char *strdup(const char *s);
+extern char *strndup(const char *s, size_t n);
 
 #include "options.h"
 #include "utils.h"
@@ -58,10 +61,17 @@ void  args (int numargs, char* match, char** arglist )
   int i;
   char *newnm = NULL;
 
+  if ( (!numargs) || (!match) || (!arglist) )
+    {
+      usage(stderr);
+      exit(0);
+    }
 
-  assert( numargs > 0 );
-  assert ( match != (char*) NULL  );
-  assert ( arglist !=(char**) NULL);
+
+  /* assert( numargs > 0 ); */
+  /* assert ( match != (char*) NULL  ); */
+  /* assert ( arglist !=(char**) NULL); */
+
 
   for (i = 1; i < numargs ; i++ )
     {

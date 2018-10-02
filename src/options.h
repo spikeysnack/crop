@@ -7,13 +7,18 @@
 
 /* AUTHOR:  Chris Reid <spikeysnack@gmail.com> */
 /* LICENSE: Free for all purposes              */
-/* COPYRIGHT: 2016- Chris Reid                 */
+/* COPYRIGHT: 2017- Chris Reid                 */
 
 
 #ifndef _OPTIONS_H_
 
 #include <unistd.h>
 #include "help.h"
+
+void options ( int argc, char** argv);
+int getopt(int argc, char * const argv[],
+	   const char *optstring);
+
 
 /* some C suites do not define bool */                                                                                                                       
 #ifndef bool

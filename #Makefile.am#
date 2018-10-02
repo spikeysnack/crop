@@ -15,7 +15,6 @@ dist_doc_DATA = doc/*
 dist_noinst_SCRIPTS = autogen.sh
 
 TESTS = check_crop.sh 
-#TESTS = test-driver
 
 webbrowser = $(shell bash find_browser.sh)
 
