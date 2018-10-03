@@ -4,13 +4,11 @@
 
 ## crop removes a matching string from a list of filenames.
 
-<<<<<<< HEAD
 ###VERSION
 crop version:	 1.6  date:	10 Nov 2017
 =======
 ### VERSION
 crop version:	 1.6  date:	10 Nov 2016
->>>>>>> 0adde30c50f6b219e17d4ef9f5940dc8c39b110c
 
 ### INSTALLATION
 	The binary crop is installed in /usr/local/bin/crop
